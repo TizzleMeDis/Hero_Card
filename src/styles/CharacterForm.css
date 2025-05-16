@@ -1,0 +1,11 @@
+.card {
+    margin: 2rem;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 1rem;
+}

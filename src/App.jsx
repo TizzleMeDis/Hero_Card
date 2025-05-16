@@ -1,14 +1,17 @@
 import { useState } from "react";
 import CharacterCard from "./components/characterCard";
-import PowerSelector from "./components/CharacterForm";
+import HeroStats from "./components/CharacterForm";
+import './App.css'
 
 function App() {
+
   const [thisPower, setThisPower] = useState(0);
+  const [thisHeal, setThisHeal] = useState(0);
 
   return (
     <>
-      <PowerSelector setThisPower={setThisPower} />
-      <CharacterCard name={"Superman"} power={thisPower} />
+      <HeroStats setThisPower={setThisPower} setThisHeal={setThisHeal}  />
+      <CharacterCard name={"Superman"} power={thisPower} heal={thisHeal}  />
     </>
   );
 }
